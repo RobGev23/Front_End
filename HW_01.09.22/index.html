@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+  --wrapper-width: 900px;
+}
+
+.wrapper {
+  background: lightgray;
+  width: var(--wrapper-width);
+  height: calc(var(--wrapper-width) * .4 + 20px);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.section1 {
+  background: lightpink;
+  aspect-ratio: 1;
+  width: 40%;
+}
+
+.section2 {
+  width: 58%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.block2 {
+  background: lightgreen;
+  height: 40%;
+}
+
+.row {
+  height: 56%;
+  display: flex;
+  justify-content: space-between;
+}
+.block3{
+  background: rosybrown;
+}
+
+.block3,
+.block4 {
+  width: calc(50% - 10px);
+}
+.block4{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.block4a,
+.block4b {
+  background: blueviolet;
+  height: calc(50% - 10px);
+}
+.is-centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px){
+  .wrapper{
+    background: none;
+    flex-direction: column;
+    height: max-content;
+  }
+  .section1,
+  .section2{
+    width: 100%;
+  }
+  .section2{
+    margin-top: 20px;
+  }
+  body{
+    align-items: unset;
+  }
+  .row{
+    margin-top: 20px;
+  }
+  .block2.is-centered{
+    height: 150px;
+  }
+
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="section1 is-centered">1</div>
+
+    <div class="section2">
+
+      <div class="block2 is-centered">2</div>
+
+      <div class="row">
+        <div class="block3 is-centered ">3</div>
+
+        <div class="block4">
+          <div class="block4a is-centered">4a</div>
+          <div class="block4b is-centered">4b</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+</html>

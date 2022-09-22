@@ -1,0 +1,133 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* ----------------------------------------- */
+/* Sidebar  */
+/* ----------------------------------------- */
+
+.sidebar {
+  height: 100%;
+  background: rgb(227, 225, 225);
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  padding: 0;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar__item {
+  list-style: none;
+  width: calc(100% / 7);
+  text-align: center;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calender__item--small {
+  font-size: 0.75rem;
+}
+.calender__item--grey {
+  color: gray;
+}
+.calendar__item.active {
+  background: black;
+  color: white;
+}
+.calendar__item:not(.calendar__item--small):hover {
+  background: lightgray;
+  cursor: pointer;
+}
+
+/* ------------------------------------------- */
+/* Main // Courses */
+/* ------------------------------------------- */
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  left: 251px;
+  width: 738px;
+  background: rgb(251, 249, 249);
+}
+
+.container1 {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  background: rebeccapurple;
+  
+} 
+.container2 {
+  width: 600px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  
+} 
+.container3 {
+  width: 600px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  
+} 
+
+.container4 {
+  width: 600px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  
+} 
+
+.container5 {
+  width: 600px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  
+} 
+
+
+
+
+
+/* ----------------------------------------- */
+/* Upcoming // Timelines */
+/* ------------------------------------------ */
+
+.timeline {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
